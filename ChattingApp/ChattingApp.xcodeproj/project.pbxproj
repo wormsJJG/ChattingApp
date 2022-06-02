@@ -9,9 +9,10 @@
 /* Begin PBXBuildFile section */
 		022C3A53C06D734697C5ECD4 /* Pods_ChattingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 565CE660F325D5A9795D5A43 /* Pods_ChattingApp.framework */; };
 		2824565A0281D3C88CAAA26E /* Pods_ChattingAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0443CE792DC2E5E9A94016F8 /* Pods_ChattingAppTests.framework */; };
+		35681BC52848E6F1004FE855 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35681BC42848E6F1004FE855 /* LoginViewController.swift */; };
+		35681BC82848E734004FE855 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35681BC72848E734004FE855 /* RegisterViewController.swift */; };
 		35AA6D5B2848E01800B94EAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AA6D5A2848E01800B94EAE /* AppDelegate.swift */; };
 		35AA6D5D2848E01800B94EAE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AA6D5C2848E01800B94EAE /* SceneDelegate.swift */; };
-		35AA6D5F2848E01800B94EAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AA6D5E2848E01800B94EAE /* ViewController.swift */; };
 		35AA6D622848E01800B94EAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35AA6D602848E01800B94EAE /* Main.storyboard */; };
 		35AA6D642848E01900B94EAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35AA6D632848E01900B94EAE /* Assets.xcassets */; };
 		35AA6D672848E01900B94EAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35AA6D652848E01900B94EAE /* LaunchScreen.storyboard */; };
@@ -41,10 +42,11 @@
 /* Begin PBXFileReference section */
 		0443CE792DC2E5E9A94016F8 /* Pods_ChattingAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChattingAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BD64B80BFFFEDE79ADEADE7 /* Pods_ChattingApp_ChattingAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChattingApp_ChattingAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35681BC42848E6F1004FE855 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		35681BC72848E734004FE855 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		35AA6D572848E01800B94EAE /* ChattingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChattingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35AA6D5A2848E01800B94EAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35AA6D5C2848E01800B94EAE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		35AA6D5E2848E01800B94EAE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		35AA6D612848E01800B94EAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		35AA6D632848E01900B94EAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35AA6D662848E01900B94EAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -91,6 +93,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35681BC02848E689004FE855 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		35681BC12848E693004FE855 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				35AA6D602848E01800B94EAE /* Main.storyboard */,
+				35AA6D632848E01900B94EAE /* Assets.xcassets */,
+				35AA6D652848E01900B94EAE /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		35681BC22848E697004FE855 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				35681BC42848E6F1004FE855 /* LoginViewController.swift */,
+				35681BC72848E734004FE855 /* RegisterViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		35681BC32848E69F004FE855 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				35AA6D5A2848E01800B94EAE /* AppDelegate.swift */,
+				35AA6D5C2848E01800B94EAE /* SceneDelegate.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		35AA6D4E2848E01800B94EAE = {
 			isa = PBXGroup;
 			children = (
@@ -116,12 +153,10 @@
 		35AA6D592848E01800B94EAE /* ChattingApp */ = {
 			isa = PBXGroup;
 			children = (
-				35AA6D5A2848E01800B94EAE /* AppDelegate.swift */,
-				35AA6D5C2848E01800B94EAE /* SceneDelegate.swift */,
-				35AA6D5E2848E01800B94EAE /* ViewController.swift */,
-				35AA6D602848E01800B94EAE /* Main.storyboard */,
-				35AA6D632848E01900B94EAE /* Assets.xcassets */,
-				35AA6D652848E01900B94EAE /* LaunchScreen.storyboard */,
+				35681BC32848E69F004FE855 /* Helper */,
+				35681BC22848E697004FE855 /* Controller */,
+				35681BC12848E693004FE855 /* View */,
+				35681BC02848E689004FE855 /* Model */,
 				35AA6D682848E01900B94EAE /* Info.plist */,
 			);
 			path = ChattingApp;
@@ -164,7 +199,6 @@
 				E3E2AAE3BFB37BC5461A152B /* Pods-ChattingAppTests.debug.xcconfig */,
 				D7315111D4CF241DB9A8331A /* Pods-ChattingAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -407,9 +441,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35AA6D5F2848E01800B94EAE /* ViewController.swift in Sources */,
+				35681BC52848E6F1004FE855 /* LoginViewController.swift in Sources */,
 				35AA6D5B2848E01800B94EAE /* AppDelegate.swift in Sources */,
 				35AA6D5D2848E01800B94EAE /* SceneDelegate.swift in Sources */,
+				35681BC82848E734004FE855 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
